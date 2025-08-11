@@ -175,73 +175,66 @@ const menuOptions = computed(() => [
         key: "theme"
     },
     {
-        label: () => h(
-            NPopover,
+        label: () => {
+            if (locale.value == 'zh') return "简体中文";
+            if (locale.value == 'zh-tw') return "繁體中文";
+            return "English";
+        },
+        key: "lang",
+        icon: () => h(NIcon, { component: Language }),
+        children: [
             {
-                trigger: "click"
-            },
-            {
-                trigger: () => h(
+                label: () => h(
                     NButton,
                     {
                         text: true,
                         size: "small",
-                        style: "width: 100%"
+                        style: "width: 100%",
+                        type: locale.value == 'zh' ? 'primary' : 'default',
+                        onClick: async () => {
+                            await changeLocale('zh');
+                            showMobileMenu.value = false;
+                        }
                     },
-                    {
-                        default: () => {
-                            if (locale.value == 'zh') return "简体中文";
-                            if (locale.value == 'zh-tw') return "繁體中文";
-                            return "English";
-                        },
-                        icon: () => h(
-                            NIcon, { component: Language }
-                        )
-                    }
+                    () => "简体中文"
                 ),
-                default: () => h(
-                    NSpace,
+                key: "zh"
+            },
+            {
+                label: () => h(
+                    NButton,
                     {
-                        vertical: true,
+                        text: true,
                         size: "small",
-                        style: "padding: 8px"
+                        style: "width: 100%",
+                        type: locale.value == 'zh-tw' ? 'primary' : 'default',
+                        onClick: async () => {
+                            await changeLocale('zh-tw');
+                            showMobileMenu.value = false;
+                        }
                     },
-                    () => [
-                        h(NButton, {
-                            text: true,
-                            size: "small",
-                            style: "width: 100%; justify-content: flex-start",
-                            type: locale.value == 'zh' ? 'primary' : 'default',
-                            onClick: async () => {
-                                await changeLocale('zh');
-                                showMobileMenu.value = false;
-                            }
-                        }, () => "简体中文"),
-                        h(NButton, {
-                            text: true,
-                            size: "small",
-                            style: "width: 100%; justify-content: flex-start",
-                            type: locale.value == 'zh-tw' ? 'primary' : 'default',
-                            onClick: async () => {
-                                await changeLocale('zh-tw');
-                                showMobileMenu.value = false;
-                            }
-                        }, () => "繁體中文"),
-                        h(NButton, {
-                            text: true,
-                            size: "small",
-                            style: "width: 100%; justify-content: flex-start",
-                            type: locale.value == 'en' ? 'primary' : 'default',
-                            onClick: async () => {
-                                await changeLocale('en');
-                                showMobileMenu.value = false;
-                            }
-                        }, () => "English")
-                    ]
-                )
+                    () => "繁體中文"
+                ),
+                key: "zh-tw"
+            },
+            {
+                label: () => h(
+                    NButton,
+                    {
+                        text: true,
+                        size: "small",
+                        style: "width: 100%",
+                        type: locale.value == 'en' ? 'primary' : 'default',
+                        onClick: async () => {
+                            await changeLocale('en');
+                            showMobileMenu.value = false;
+                        }
+                    },
+                    () => "English"
+                ),
+                key: "en"
             }
-        ),
-        key: "lang"
+        ]
     },
     {
         label: () => h(
