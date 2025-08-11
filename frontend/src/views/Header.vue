@@ -42,9 +42,14 @@ const authFunc = async () => {
 
 const changeLocale = async (lang) => {
     if (lang == 'zh') {
-        await router.push(route.fullPath.replace('/en', ''));
+        await router.push(route.fullPath.replace('/en', '').replace('/zh-tw', ''));
+    } else if (lang == 'zh-tw') {
+        let newPath = route.fullPath.replace('/en', '').replace('/zh-tw', '');
+        newPath = `/zh-tw${newPath}`;
+        await router.push(newPath);
     } else {
-        await router.push(`/${lang}${route.fullPath}`);
+        let newPath = route.fullPath.replace('/zh-tw', '');
+        await router.push(`/${lang}${newPath}`);
     }
 }
 
@@ -71,6 +76,17 @@ const { locale, t } = useI18n({
             menu: '菜单',
             user: '用户',
             ok: '确定',
+        },
+        'zh-tw': {
+            title: 'Cloudflare 臨時信箱',
+            dark: '深色',
+            light: '淺色',
+            accessHeader: '存取密碼',
+            accessTip: '請輸入網站存取密碼',
+            home: '首頁',
+            menu: '選單',
+            user: '使用者',
+            ok: '確定',
         }
     }
 });
@@ -166,12 +182,22 @@ const menuOptions = computed(() => [
                 size: "small",
                 style: "width: 100%",
                 onClick: async () => {
-                    locale.value == 'zh' ? await changeLocale('en') : await changeLocale('zh');
+                    if (locale.value == 'zh') {
+                        await changeLocale('zh-tw');
+                    } else if (locale.value == 'zh-tw') {
+                        await changeLocale('en');
+                    } else {
+                        await changeLocale('zh');
+                    }
                     showMobileMenu.value = false;
                 }
             },
             {
-                default: () => locale.value == 'zh' ? "English" : "中文",
+                default: () => {
+                    if (locale.value == 'zh') return "繁體中文";
+                    if (locale.value == 'zh-tw') return "English";
+                    return "简体中文";
+                },
                 icon: () => h(
                     NIcon, { component: Language }
                 )

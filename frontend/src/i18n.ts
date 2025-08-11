@@ -9,6 +9,9 @@ const i18n = createI18n({
     },
     'zh': {
         messages: {}
+    },
+    'zh-tw': {
+        messages: {}
     }
 })
 

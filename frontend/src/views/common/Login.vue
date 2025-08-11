@@ -100,6 +100,22 @@ const { locale, t } = useI18n({
             credentialInput: '请输入邮箱地址凭据',
             bindUserInfo: '已登录用户, 登录未绑定邮箱或创建新邮箱地址将绑定到当前用户',
             bindUserAddressError: '绑定邮箱地址到用户时错误',
+        },
+        'zh-tw': {
+            login: '登入',
+            loginAndBind: '登入並綁定',
+            pleaseGetNewEmail: '請「登入」或點擊「註冊新信箱」按鈕來取得一個新的信箱地址',
+            getNewEmail: '建立新信箱',
+            getNewEmailTip1: '請輸入您想要使用的信箱地址，只允許：',
+            getNewEmailTip2: '留空將會產生一個隨機的信箱地址。',
+            getNewEmailTip3: '您可以從下拉式清單中選擇一個網域。',
+            credential: '信箱地址憑證',
+            ok: '確定',
+            generateName: '產生隨機名字',
+            help: '說明',
+            credentialInput: '請輸入信箱地址憑證',
+            bindUserInfo: '已登入使用者，登入未綁定信箱或建立新信箱地址將綁定到目前使用者',
+            bindUserAddressError: '綁定信箱地址到使用者時發生錯誤',
         }
     }
 });

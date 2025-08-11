@@ -45,6 +45,20 @@ const { t } = useI18n({
             bottom: '底部',
             useUTCDate: '使用 UTC 时间',
             autoRefreshInterval: '自动刷新间隔(秒)',
+        },
+        'zh-tw': {
+            useSimpleIndex: '使用極簡首頁',
+            mailboxSplitSize: '信箱介面分欄大小',
+            preferShowTextMail: '預設以文字顯示郵件',
+            useIframeShowMail: '使用iframe顯示HTML郵件',
+            globalTabplacement: '全域選項卡位置',
+            useSideMargin: '開啟頁面左右兩側邊距',
+            left: '左側',
+            top: '頂部',
+            right: '右側',
+            bottom: '底部',
+            useUTCDate: '使用 UTC 時間',
+            autoRefreshInterval: '自動重新整理間隔(秒)',
         }
     }
 });

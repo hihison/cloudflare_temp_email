@@ -26,6 +26,12 @@ const { t } = useI18n({
             user_mail_box_tab: '收件箱',
             user_settings: '用户设置',
             bind_address: '绑定邮箱地址',
+        },
+        'zh-tw': {
+            address_management: '地址管理',
+            user_mail_box_tab: '收件匣',
+            user_settings: '使用者設定',
+            bind_address: '綁定信箱地址',
         }
     }
 });

@@ -2,8 +2,9 @@
 # Cloudflare Temp Email
 
 <p align="center">
-  <a href="README.md">🇨🇳 中文</a> |
-  <a href="README_EN.md">🇺🇸 English</a>
+  <a href="README.md">🇨🇳 简体中文</a> |
+  <a href="README_EN.md">🇺🇸 English</a> |
+  <a href="README_ZH_TW.md">🇹🇼 繁體中文</a>
 </p>
 
 **A fully-featured temporary email service built on Cloudflare's free services.**

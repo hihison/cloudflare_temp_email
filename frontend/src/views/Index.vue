@@ -55,6 +55,19 @@ const { t } = useI18n({
       saveToS3Success: '保存到s3成功',
       webhookSettings: 'Webhook 设置',
       query: '查询',
+    },
+    'zh-tw': {
+      mailbox: '收件匣',
+      sendbox: '寄件匣',
+      sendmail: '傳送郵件',
+      auto_reply: '自動回覆',
+      accountSettings: '帳戶',
+      appearance: '外觀',
+      about: '關於',
+      s3Attachment: 'S3附件',
+      saveToS3Success: '儲存到s3成功',
+      webhookSettings: 'Webhook 設定',
+      query: '查詢',
     }
   }
 });

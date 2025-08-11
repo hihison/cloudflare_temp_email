@@ -1,5 +1,6 @@
 import { LocaleMessages } from "./type";
 import zh from "./zh";
+import zhtw from "./zhtw";
 import en from "./en";
 import { Context } from "hono";
 
@@ -10,6 +11,7 @@ export default {
         // multi-language support
         if (locale === "en") return en;
         if (locale === "zh") return zh;
+        if (locale === "zh-tw") return zhtw;
 
         // fallback language
         return en;
@@ -21,6 +23,7 @@ export default {
         // multi-language support
         if (locale === "en") return en;
         if (locale === "zh") return zh;
+        if (locale === "zh-tw") return zhtw;
 
         // fallback language
         return en;

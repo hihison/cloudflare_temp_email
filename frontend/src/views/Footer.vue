@@ -11,6 +11,9 @@ const { t } = useI18n({
         },
         zh: {
             copyright: "版权所有"
+        },
+        'zh-tw': {
+            copyright: "版權所有"
         }
     }
 });
