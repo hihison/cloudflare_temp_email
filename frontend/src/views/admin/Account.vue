@@ -53,6 +53,25 @@ const { t } = useI18n({
             query: '查询',
             addressQueryTip: '留空查询所有地址',
             actions: '操作',
+        },
+        'zh-tw': {
+            name: '名稱',
+            created_at: '建立時間',
+            updated_at: '更新時間',
+            mail_count: '郵件數量',
+            send_count: '發送數量',
+            showCredential: '查看信箱地址憑證',
+            addressCredential: '信箱地址憑證',
+            addressCredentialTip: '請複製信箱地址憑證，您可以使用它登入您的信箱。',
+            delete: '刪除',
+            deleteTip: '確定要刪除這個信箱嗎？',
+            deleteAccount: '刪除帳戶',
+            viewMails: '查看郵件',
+            viewSendBox: '查看寄件匣',
+            itemCount: '總數',
+            query: '查詢',
+            addressQueryTip: '留空查詢所有地址',
+            actions: '操作',
         }
     }
 });

@@ -114,6 +114,26 @@ const { t } = useI18n({
       cancelMultiAction: '取消多选',
       selectAll: '全选本页',
       unselectAll: '取消全选',
+    },
+    'zh-tw': {
+      success: '成功',
+      autoRefresh: '自動重新整理',
+      refreshAfter: '{msg}秒後重新整理',
+      refresh: '重新整理',
+      downloadMail: '下載郵件',
+      attachments: '查看附件',
+      pleaseSelectMail: "請選擇郵件",
+      delete: '刪除',
+      deleteMailTip: '確定要刪除郵件嗎？',
+      reply: '回覆',
+      forwardMail: '轉發',
+      showTextMail: '顯示純文字郵件',
+      showHtmlMail: '顯示HTML郵件',
+      saveToS3: '儲存到S3',
+      multiAction: '多選',
+      cancelMultiAction: '取消多選',
+      selectAll: '全選本頁',
+      unselectAll: '取消全選',
     }
   }
 });

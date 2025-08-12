@@ -17,6 +17,11 @@ const { t } = useI18n({
             addressQueryTip: '留空查询所有地址',
             keywordQueryTip: '留空不按关键字查询',
             query: '查询',
+        },
+        'zh-tw': {
+            addressQueryTip: '留空查詢所有地址',
+            keywordQueryTip: '留空不按關鍵字查詢',
+            query: '查詢',
         }
     }
 });
