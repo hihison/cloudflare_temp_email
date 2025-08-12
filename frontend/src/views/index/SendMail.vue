@@ -53,6 +53,24 @@ const { t } = useI18n({
             html: 'HTML',
             'rich text': '富文本',
             tooLarge: '文件过大, 请上传小于1MB的文件。',
+        },
+        'zh-tw': {
+            successSend: '請檢視您的寄件匣，如果失敗，請檢查您的餘額或稍後重試。',
+            fromName: '您的名稱和地址，名稱不填寫則使用信箱地址',
+            toName: '收件人名稱和地址，名稱不填寫則使用信箱地址',
+            subject: '主旨',
+            options: '選項',
+            edit: '編輯',
+            preview: '預覽',
+            content: '內容',
+            send: '傳送',
+            requestAccess: '申請權限',
+            requestAccessTip: '您需要申請權限才能傳送信件，如果已經申請過，請聯絡管理員提升額度。',
+            send_balance: '剩餘傳送信件額度',
+            text: '文字',
+            html: 'HTML',
+            'rich text': '富文字',
+            tooLarge: '檔案過大，請上傳小於1MB的檔案。',
         }
     }
 });

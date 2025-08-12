@@ -32,6 +32,14 @@ const { locale, t } = useI18n({
             logoutConfirm: '确定要退出登录吗？',
             deleteAccount: "删除账户",
             deleteAccountConfirm: "确定要删除你的账户和其中的所有邮件吗?",
+        },
+        'zh-tw': {
+            logout: '登出',
+            deleteAccount: "刪除帳戶",
+            showAddressCredential: '檢視信箱地址憑證',
+            logoutConfirm: '確定要登出嗎？',
+            deleteAccount: "刪除帳戶",
+            deleteAccountConfirm: "確定要刪除您的帳戶和其中的所有信件嗎？",
         }
     }
 });

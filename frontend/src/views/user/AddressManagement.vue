@@ -45,6 +45,21 @@ const { locale, t } = useI18n({
             transferAddressTip: '转移地址到其他用户将会从你的账户中移除此地址并转移给其他用户。确定要转移地址吗？',
             address: '地址',
             create_or_bind: '创建或绑定',
+        },
+        'zh-tw': {
+            success: '成功',
+            name: '名稱',
+            mail_count: '信件數量',
+            send_count: '傳送數量',
+            actions: '操作',
+            changeMailAddress: '切換地址',
+            unbindAddress: '解除綁定地址',
+            unbindAddressTip: '解除綁定前請切換到此信箱地址並儲存信箱地址憑證。',
+            transferAddress: '轉移地址',
+            targetUserEmail: '目標使用者信箱',
+            transferAddressTip: '轉移地址到其他使用者將會從您的帳戶中移除此地址並轉移給其他使用者。確定要轉移地址嗎？',
+            address: '地址',
+            create_or_bind: '建立或綁定',
         }
     }
 });
