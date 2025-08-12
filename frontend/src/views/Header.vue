@@ -252,15 +252,15 @@ const menuOptions = computed(() => [
                 icon: () => h(NIcon, { component: GithubAlt })
             }
         ),
-        show: openSettings.value?.showGithub,
+        show: openSettings.value && openSettings.value.showGithub,
         key: "github"
     }
 ]);
 
 useHead({
-    title: () => openSettings.value.title || t('title'),
+    title: () => (openSettings.value && openSettings.value.title) || t('title'),
     meta: [
-        { name: "description", content: openSettings.value.description || t('title') },
+        { name: "description", content: (openSettings.value && openSettings.value.description) || t('title') },
     ]
 });
 
@@ -295,7 +295,7 @@ onMounted(async () => {
     <div>
         <n-page-header>
             <template #title>
-                <h3>{{ openSettings.title || t('title') }}</h3>
+                <h3>{{ (openSettings && openSettings.title) || t('title') }}</h3>
             </template>
             <template #avatar>
                 <div @click="logoClick">
