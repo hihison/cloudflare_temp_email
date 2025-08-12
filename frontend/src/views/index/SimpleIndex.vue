@@ -58,6 +58,20 @@ const { t } = useI18n({
             accountSettings: "账户设置",
             addressCredential: '邮箱地址凭证',
             addressCredentialTip: '请复制邮箱地址凭证，你可以使用它登录你的邮箱。'
+        },
+        'zh-tw': {
+            exitSimpleIndex: '退出極簡',
+            copyAddress: '複製',
+            addressCopied: '地址複製成功',
+            refreshMails: '重新整理',
+            noMails: '暫無信件',
+            prevPage: '上一頁',
+            nextPage: '下一頁',
+            refreshSuccess: '信件重新整理成功',
+            mailCount: '{current} / {total} 封信件',
+            accountSettings: "帳戶設定",
+            addressCredential: '信箱地址憑證',
+            addressCredentialTip: '請複製信箱地址憑證，您可以使用它登入您的信箱。'
         }
     }
 })

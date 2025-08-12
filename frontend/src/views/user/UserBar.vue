@@ -23,7 +23,10 @@ const { t } = useI18n({
         zh: {
             currentUser: '当前登录用户',
             fetchUserSettingsError: '登录信息已过期或账号不存在，也可能是网络连接异常，请稍后再尝试。',
-
+        },
+        'zh-tw': {
+            currentUser: '目前登入使用者',
+            fetchUserSettingsError: '登入資訊已過期或帳號不存在，也可能是網路連線異常，請稍後再嘗試。',
         }
     }
 });
