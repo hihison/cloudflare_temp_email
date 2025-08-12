@@ -53,6 +53,23 @@ const { t } = useI18n({
             actions: '操作',
             renamePasskey: '重命名 Passkey',
             renamePasskeyNamePlaceholder: '请输入新的 Passkey 名称',
+        },
+        'zh-tw': {
+            logout: '登出',
+            logoutConfirm: '確定要登出嗎？',
+            passordTip: '伺服器只會接收到密碼的雜湊值，不會接收到明文密碼，因此無法檢視或者找回您的密碼，如果管理員啟用了信件驗證您可以在無痕模式重設密碼',
+            createPasskey: '建立 Passkey',
+            showPasskeyList: '檢視 Passkey 清單',
+            passkeyCreated: 'Passkey 建立成功',
+            passkeyNamePlaceholder: '請輸入 Passkey 名稱或者留空自動產生',
+            renamePasskey: '重新命名 Passkey',
+            deletePasskey: '刪除 Passkey',
+            passkey_name: 'Passkey 名稱',
+            created_at: '建立時間',
+            updated_at: '更新時間',
+            actions: '操作',
+            renamePasskey: '重新命名 Passkey',
+            renamePasskeyNamePlaceholder: '請輸入新的 Passkey 名稱',
         }
     }
 });

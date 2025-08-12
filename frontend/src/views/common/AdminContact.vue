@@ -10,6 +10,9 @@ const { t } = useI18n({
         },
         zh: {
             adminContact: '如果你需要帮助，请联系管理员 ({msg})',
+        },
+        'zh-tw': {
+            adminContact: '如果您需要協助，請聯絡管理員 ({msg})',
         }
     }
 });
