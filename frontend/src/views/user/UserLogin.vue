@@ -58,6 +58,26 @@ const { t } = useI18n({
             pleaseLogin: '请登录',
             loginWithPasskey: '使用 Passkey 登录',
             loginWith: '使用 {provider} 登录',
+        },
+        'zh-tw': {
+            login: '登入',
+            register: '註冊',
+            email: '信箱',
+            password: '密碼',
+            verifyCode: '驗證碼',
+            sendVerificationCode: '發送驗證碼',
+            verifyCodeSent: '驗證碼已發送，{timeout} 秒後失效',
+            waitforVerifyCode: '等待 {timeout} 秒',
+            forgotPassword: '忘記密碼',
+            cannotForgotPassword: '未開啟信箱驗證或未開啟註冊功能，無法重設密碼，請聯絡管理員',
+            resetPassword: '重設密碼',
+            pleaseInput: '請輸入信箱和密碼',
+            pleaseInputEmail: '請輸入信箱',
+            pleaseInputCode: '請輸入驗證碼',
+            pleaseCompleteTurnstile: '請完成人機驗證',
+            pleaseLogin: '請登入',
+            loginWithPasskey: '使用 Passkey 登入',
+            loginWith: '使用 {provider} 登入',
         }
     }
 });

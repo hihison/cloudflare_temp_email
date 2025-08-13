@@ -47,6 +47,18 @@ const { locale, t } = useI18n({
             linkWithAddressCredential: '打开即可自动登录邮箱的链接',
             addressCredentialTip: '请复制邮箱地址凭证，你可以使用它登录你的邮箱。',
             userLogin: '用户登录',
+        },
+        'zh-tw': {
+            addressManage: '地址管理',
+            changeAddress: '更換地址',
+            ok: '確定',
+            copy: '複製',
+            copied: '已複製',
+            fetchAddressError: '信箱地址憑證無效或信箱地址不存在，也可能是網路連線異常，請稍後再嘗試。',
+            addressCredential: '信箱地址憑證',
+            linkWithAddressCredential: '開啟即可自動登入信箱的連結',
+            addressCredentialTip: '請複製信箱地址憑證，您可以使用它登入您的信箱。',
+            userLogin: '使用者登入',
         }
     }
 });

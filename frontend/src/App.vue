@@ -16,7 +16,7 @@ const adClient = import.meta.env.VITE_GOOGLE_AD_CLIENT;
 const adSlot = import.meta.env.VITE_GOOGLE_AD_SLOT;
 const { locale } = useI18n({});
 const theme = computed(() => isDark.value ? darkTheme : null)
-const localeConfig = computed(() => locale.value == 'zh' ? zhCN : null)
+const localeConfig = computed(() => (locale.value == 'zh' || locale.value == 'zh-tw') ? zhCN : null)
 const isMobile = useIsMobile()
 const showSideMargin = computed(() => !isMobile.value && useSideMargin.value);
 const showAd = computed(() => !isMobile.value && adClient && adSlot);

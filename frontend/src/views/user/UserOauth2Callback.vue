@@ -23,6 +23,10 @@ const { t } = useI18n({
         zh: {
             logging: '登录中...',
             stateNotMatch: 'state 不匹配',
+        },
+        'zh-tw': {
+            logging: '登入中...',
+            stateNotMatch: 'state 不符合',
         }
     }
 });

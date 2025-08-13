@@ -22,6 +22,13 @@ const { t } = useI18n({
             delete: '删除',
             deleteConfirm: '确定要删除此附件吗？',
             deleteSuccess: '删除成功',
+        },
+        'zh-tw': {
+            download: '下載',
+            action: '操作',
+            delete: '刪除',
+            deleteConfirm: '確定要刪除此附件嗎？',
+            deleteSuccess: '刪除成功',
         }
     }
 });

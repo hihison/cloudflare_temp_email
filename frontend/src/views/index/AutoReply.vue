@@ -37,6 +37,16 @@ const { t } = useI18n({
             subject: '主题',
             autoReply: '自动回复',
             save: '保存',
+        },
+        'zh-tw': {
+            success: '成功',
+            settings: '設定',
+            sourcePrefix: '來源信件前綴',
+            name: '名稱',
+            enableAutoReply: '啟用自動回覆',
+            subject: '主旨',
+            autoReply: '自動回覆',
+            save: '儲存',
         }
     }
 });

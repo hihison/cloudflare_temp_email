@@ -34,6 +34,16 @@ const { t } = useI18n({
             unbindMailAddress: '解绑邮箱地址',
             create_or_bind: '创建或绑定',
             bindAddressSuccess: '绑定地址成功',
+        },
+        'zh-tw': {
+            tip: '這些地址儲存在您的瀏覽器中，如果您清除瀏覽器快取，可能會遺失。',
+            success: '成功',
+            address: '地址',
+            actions: '操作',
+            changeMailAddress: '切換信箱地址',
+            unbindMailAddress: '解除綁定信箱地址',
+            create_or_bind: '建立或綁定',
+            bindAddressSuccess: '綁定地址成功',
         }
     }
 });
