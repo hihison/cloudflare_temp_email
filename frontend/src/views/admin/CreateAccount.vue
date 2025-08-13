@@ -27,6 +27,14 @@ const { t } = useI18n({
             fillInAllFields: '请填写完整信息',
             successTip: '创建成功',
             addressCredential: '邮箱地址凭证',
+        },
+        'zh-tw': {
+            address: '地址',
+            enablePrefix: '是否啟用前綴',
+            creatNewEmail: '建立新信箱',
+            fillInAllFields: '請填寫完整資訊',
+            successTip: '建立成功',
+            addressCredential: '信箱地址憑證',
         }
     }
 });

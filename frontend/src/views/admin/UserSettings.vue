@@ -31,6 +31,17 @@ const { t } = useI18n({
             enableMailAllowList: '启用邮件地址白名单(可手动输入, 回车增加)',
             mailAllowList: '邮件地址白名单',
             maxAddressCount: '可绑定最大邮箱地址数量',
+        },
+        'zh-tw': {
+            save: '保存',
+            successTip: '保存成功',
+            enable: '啟用',
+            enableUserRegister: "允許用戶註冊",
+            enableMailVerify: '啟用郵件驗證(發送地址必須是系統中能有餘額且能正常發送郵件的地址)',
+            verifyMailSender: '驗證郵件發送地址',
+            enableMailAllowList: '啟用郵件地址白名單(可手動輸入, 回車增加)',
+            mailAllowList: '郵件地址白名單',
+            maxAddressCount: '可綁定最大郵箱地址數量',
         }
     }
 });

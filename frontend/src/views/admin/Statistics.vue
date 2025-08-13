@@ -25,6 +25,14 @@ const { t } = useI18n({
             activeAddressCount30days: '30天活跃邮箱地址总数',
             mailCount: '邮件总数',
             sendMailCount: '发送邮件总数'
+        },
+        'zh-tw': {
+            userCount: '使用者總數',
+            addressCount: '郵箱地址總數',
+            activeAddressCount7days: '7天活躍郵箱地址總數',
+            activeAddressCount30days: '30天活躍郵箱地址總數',
+            mailCount: '郵件總數',
+            sendMailCount: '發送郵件總數'
         }
     }
 });

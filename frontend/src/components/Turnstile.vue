@@ -13,6 +13,9 @@ const { locale, t } = useI18n({
         },
         zh: {
             refresh: '刷新'
+        },
+        'zh-tw': {
+            refresh: '重新整理'
         }
     }
 });

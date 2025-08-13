@@ -27,6 +27,12 @@ const { locale, t } = useI18n({
             name: '名称',
             mail_count: '邮件数量',
             send_count: '发送数量',
+        },
+        'zh-tw': {
+            success: '成功',
+            name: '名稱',
+            mail_count: '郵件數量',
+            send_count: '發送數量',
         }
     }
 });

@@ -35,6 +35,16 @@ const { t } = useI18n({
             migration: '升级数据库 Schema',
             initializationSuccess: '数据库初始化成功',
             migrationSuccess: '数据库升级成功',
+        },
+        'zh-tw': {
+            need_initialization_tip: '需要初始化資料庫，請初始化資料庫',
+            need_migration_tip: '需要遷移資料庫，請遷移資料庫',
+            current_db_version: '目前資料庫版本',
+            code_db_version: '需要的資料庫版本',
+            init: '初始化資料庫',
+            migration: '升級資料庫 Schema',
+            initializationSuccess: '資料庫初始化成功',
+            migrationSuccess: '資料庫升級成功',
         }
     }
 });

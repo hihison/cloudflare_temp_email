@@ -46,6 +46,17 @@ const { t } = useI18n({
             messagePusherDemo: '填入MessagePusher示例',
             messagePusherDoc: 'MessagePusher文档',
             fillInDemoTip: '请修改URL和其他设置为您自己的配置',
+        },
+        'zh-tw': {
+            successTip: '成功',
+            test: '測試',
+            save: '儲存',
+            notEnabled: 'Webhook 未開啟，請聯絡管理員開啟',
+            urlMissing: 'URL 不能為空',
+            enable: '啟用',
+            messagePusherDemo: '填入MessagePusher範例',
+            messagePusherDoc: 'MessagePusher文件',
+            fillInDemoTip: '請修改URL和其他設定為您自己的配置',
         }
     }
 });

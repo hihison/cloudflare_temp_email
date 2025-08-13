@@ -70,6 +70,18 @@ const { t } = useI18n({
       cancelMultiAction: '取消多选',
       selectAll: '全选本页',
       unselectAll: '取消全选',
+    },
+    'zh-tw': {
+      success: '成功',
+      refresh: '重新整理',
+      showCode: '切換檢視原始資料',
+      pleaseSelectMail: "請選擇一封郵件檢視。",
+      delete: '刪除',
+      deleteMailTip: '確定要刪除郵件嗎？',
+      multiAction: '多選',
+      cancelMultiAction: '取消多選',
+      selectAll: '全選本頁',
+      unselectAll: '取消全選',
     }
   }
 });

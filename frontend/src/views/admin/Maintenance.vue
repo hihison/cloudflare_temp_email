@@ -46,6 +46,19 @@ const { t } = useI18n({
             cleanupNow: "立即清理",
             save: "保存",
             cronTip: "启用定时清理, 需在 worker 配置 [crons] 参数, 请参考文档, 配置为 0 天表示全部清空",
+        },
+        'zh-tw': {
+            tip: '請輸入天數',
+            mailBoxLabel: '清理 n 天前的收件匣',
+            mailUnknowLabel: "清理 n 天前的無收件人郵件",
+            sendBoxLabel: "清理 n 天前的寄件匣",
+            addressCreateLabel: "清理 n 天前建立的地址",
+            inactiveAddressLabel: "清理 n 天前的未活躍地址",
+            autoCleanup: "自動清理",
+            cleanupSuccess: "清理成功",
+            cleanupNow: "立即清理",
+            save: "儲存",
+            cronTip: "啟用定時清理，需在 worker 配置 [crons] 參數，請參考文件，配置為 0 天表示全部清空",
         }
     }
 });
